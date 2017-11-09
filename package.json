@@ -5,12 +5,18 @@
   "dependencies": {
     "inferno": "^3.10.1",
     "inferno-component": "^3.10.1",
-    "inferno-scripts": "5.0.0"
+    "inferno-create-element": "^3.10.1",
+    "inferno-redux": "^3.10.1",
+    "inferno-scripts": "^5.0.0",
+    "jsonforms-inferno": "file:jsonforms-inferno-2.1.0-alpha.3.tgz"
   },
   "scripts": {
     "start": "inferno-scripts start",
     "build": "inferno-scripts build",
     "test": "inferno-scripts test --env=jsdom",
     "eject": "inferno-scripts eject"
+  },
+  "devDependencies": {
+    "babel-plugin-inferno": "^3.3.0"
   }
 }
