@@ -54,5 +54,6 @@
 				}
 			}
 		}
-	}
+	},
+	"required": ["firstName", "lastName", "age", "gender"]
 }
