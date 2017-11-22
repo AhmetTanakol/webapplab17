@@ -44,6 +44,23 @@
 				{
 					"type": "Control",
 					"scope": {
+						"$ref": "#/properties/dateAndTimeOfParty"
+					}
+				},
+				{
+					"type": "Control",
+					"scope": {
+						"$ref": "#/properties/timeOfArrival"
+					}
+				}
+			]
+		},
+		{
+			"type": "HorizontalLayout",
+			"elements": [
+				{
+					"type": "Control",
+					"scope": {
 						"$ref": "#/properties/height"
 					}
 				},
