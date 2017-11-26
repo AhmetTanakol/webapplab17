@@ -11,10 +11,19 @@
 			"minLength": 5,
 			"maxLength": 15
 		},
-		"age": {
-			"type": "integer",
-			"minimum": 18,
-			"maximum": 100
+		"personalData": {
+			"type": "object",
+			"properties": {
+				"age": {
+					"type": "integer",
+					"minimum": 18,
+					"maximum": 100
+				},
+				"height": {
+					"type": "number"
+				}
+			},
+			"required": ["age", "height"]
 		},
 		"gender": {
 			"type": "string",
@@ -23,9 +32,6 @@
 				"Female",
 				"Undisclosed"
 			]
-		},
-		"height": {
-			"type": "number"
 		},
 		"dateOfBirth": {
 			"type": "string",

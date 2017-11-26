@@ -27,7 +27,7 @@
 				{
 					"type": "Control",
 					"scope": {
-						"$ref": "#/properties/age"
+						"$ref": "#/properties/personalData/properties/age"
 					}
 				},
 				{
@@ -61,7 +61,7 @@
 				{
 					"type": "Control",
 					"scope": {
-						"$ref": "#/properties/height"
+						"$ref": "#/properties/personalData/properties/height"
 					}
 				},
 				{
