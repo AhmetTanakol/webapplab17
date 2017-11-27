@@ -24,8 +24,14 @@ export class SliderControl extends Control {
    */
   render() {
     return (
-      <Slider/>
+      <Slider value={this.state.value}
+              onChange={ev => this.onChange(ev)}
+      />
     );
+  }
+
+  onChange(ev) {
+    this.updateData(ev.target.value);
   }
 }
 
