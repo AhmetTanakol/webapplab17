@@ -38,6 +38,31 @@
 				{
 					"type": "Control",
 					"scope": {
+						"$ref": "#/properties/streetnumber"
+					},
+					"options": {
+						"trim": true,
+						"restrict": false
+					}
+				},
+				{
+					"type": "Control",
+					"scope": {
+						"$ref": "#/properties/postalCode"
+					},
+					"options": {
+						"trim": true,
+						"restrict": true
+					}
+				}
+			]
+		},
+		{
+			"type": "HorizontalLayout",
+			"elements": [
+				{
+					"type": "Control",
+					"scope": {
 						"$ref": "#/properties/personalData/properties/age"
 					}
 				},

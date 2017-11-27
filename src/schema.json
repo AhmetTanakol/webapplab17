@@ -70,6 +70,14 @@
 		"timeOfArrival": {
 			"type": "string",
 			"format": "time"
+		},
+		"streetnumber": {
+			"type": "string",
+			"maxLength": 4
+		},
+		"postalCode": {
+			"type": "string",
+			"maxLength": 5
 		}
 	},
 	"required": ["firstName", "lastName", "age", "gender"]
