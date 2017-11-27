@@ -1,6 +1,9 @@
 {
 	"type": "object",
 	"properties": {
+		"slider": {
+			"type": "number"
+		},
 		"firstName": {
 			"type": "string",
 			"minLength": 2,
