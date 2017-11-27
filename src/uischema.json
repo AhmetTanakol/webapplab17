@@ -7,6 +7,17 @@
 				{
 					"type": "Control",
 					"scope": {
+						"$ref": "#/properties/slider"
+					}
+				}
+			]
+		},
+		{
+			"type": "HorizontalLayout",
+			"elements": [
+				{
+					"type": "Control",
+					"scope": {
 						"$ref": "#/properties/firstName"
 					}
 				},
