@@ -1,70 +1,39 @@
 {
 	"type": "object",
 	"properties": {
-		"slider": {
-			"type": "number"
-		},
-		"firstName": {
-			"type": "string",
-			"minLength": 2,
-			"maxLength": 20
-		},
-		"lastName": {
-			"type": "string",
-			"minLength": 5,
-			"maxLength": 15
-		},
 		"personalData": {
 			"type": "object",
 			"properties": {
+				"firstName": {
+					"type": "string",
+					"minLength": 2,
+					"maxLength": 20
+				},
+				"lastName": {
+					"type": "string",
+					"minLength": 5,
+					"maxLength": 15
+				},
 				"age": {
-					"type": "integer",
-					"minimum": 18,
-					"maximum": 100
+					"type": "integer"
+				},
+				"height": {
+					"type": "number"
+				},
+				"gender": {
+					"type": "string",
+					"enum": [
+						"Male",
+						"Female",
+						"Undisclosed"
+					]
 				},
 				"drivingSkill": {
 					"type": "integer",
 					"minimum": 1,
 					"maximum": 10
 				}
-			},
-			"required": ["age"]
-		},
-		"gender": {
-			"type": "string",
-			"enum": [
-				"Male",
-				"Female",
-				"Undisclosed"
-			]
-		},
-		"timeHours": {
-			"type": "string",
-			"enum": [
-				"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12",
-				"13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"
-			]
-		},
-		"timeMinutes": {
-			"type": "string",
-			"enum": [
-				"00", "01", "02", "03", "04", "05", "06", "07", "08", "09",
-				"10", "11", "12", "13", "14", "15", "16", "17", "18", "19",
-				"20", "21", "22", "23", "24", "25", "26", "27", "28", "29",
-				"30", "31", "32", "33", "34", "35", "36", "37", "38", "39",
-				"40", "41", "42", "43", "44", "45", "46", "47", "48", "49",
-				"50", "51", "52", "53", "54", "55", "56", "57", "58", "59"
-			]
-		},
-		"dateOfBirth": {
-			"type": "string",
-			"format": "date"
-		},
-		"rating": {
-			"type": "integer"
-		},
-		"committer": {
-			"type": "boolean"
+			}
 		},
 		"address": {
 			"type": "object",
@@ -72,11 +41,16 @@
 				"street": {
 					"type": "string"
 				},
-				"streetnumber": {
-					"type": "string"
+				"province": {
+					"type": "string",
+					"enum": ["Baden-Württemberg", "Bavaria", "Berlin", "Brandenburg", "Bremen", "Hamburg",
+						"Hessen", "Niedersachsen", "Mecklenburg-Vorpommern", "Nordrhein-Westfalen",
+						"Rheinland-Pfalz", "Saarland", "Sachsen", "Sachsen-Anhalt", "Schleswig-Holstein",
+						"Thüringen"]
 				},
 				"postalCode": {
-					"type": "string"
+					"type": "string",
+					"maxLength": 5
 				},
 				"city": {
 					"type": "string"
@@ -99,6 +73,5 @@
 			"type": "string",
 			"maxLength": 5
 		}
-	},
-	"required": ["firstName", "lastName", "age"]
+	}
 }

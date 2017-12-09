@@ -18,11 +18,6 @@ class App extends Component {
           <Logo />
         </header>
         <h1>{`Welcome to bad example`}</h1>
-        <p className="App-intro">
-          More Forms. Less Code.
-        </p>
-        Bound data:
-        <pre>{this.props.dataAsString}</pre>
         <div className="demoform">
           <JsonFormsRenderer
             schema={schema}

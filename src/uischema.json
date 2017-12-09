@@ -2,65 +2,106 @@
 	"type": "VerticalLayout",
 	"elements": [
 		{
-			"type": "HorizontalLayout",
+			"type": "Group",
+			"label": "Personal Information",
 			"elements": [
 				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/gender"
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"label": "Time of arrival",
-					"scope": {
-						"$ref": "#/properties/timeHours"
-					}
+					"type": "HorizontalLayout",
+					"elements": [
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/firstName"
+							},
+							"options": {
+								"focus": true
+							}
+						},
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/lastName"
+							}
+						}
+					]
 				},
 				{
-					"type": "Control",
-					"label": "",
-					"scope": {
-						"$ref": "#/properties/timeMinutes"
-					}
+					"type": "HorizontalLayout",
+					"elements": [
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/age"
+							}
+						},
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/height"
+							}
+						}
+					]
+				},
+				{
+					"type": "HorizontalLayout",
+					"elements": [
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/gender"
+							}
+						},
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/personalData/properties/drivingSkill"
+							}
+						}
+					]
 				}
 			]
 		},
 		{
-			"type": "HorizontalLayout",
+			"type": "Group",
+			"label": "Address Information",
 			"elements": [
 				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/personalData/properties/age"
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
+					"type": "HorizontalLayout",
+					"elements": [
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/address/properties/street"
+							}
+						},
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/address/properties/city"
+							}
+						}
+					]
+				},
 				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/personalData/properties/drivingSkill"
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/postalCode"
-					}
+					"type": "HorizontalLayout",
+					"elements": [
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/address/properties/province"
+							}
+						},
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/address/properties/postalCode"
+							},
+							"options": {
+								"trim": true,
+								"restrict": true
+							}
+						}
+					]
 				}
 			]
 		}
