@@ -11,22 +11,27 @@ import {getData} from 'jsonforms-inferno/dist/ts-build/reducers';
 
 class App extends Component {
 
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <Logo />
+    render() {
+        const divStyle = {
+            color: 'white'
+        };
+        return (
+            <div className="App">
+            <header className="App-header">
+            <p style={divStyle}> Web App Lab 17</p>
         </header>
-        <h1>{`Welcome to bad example`}</h1>
+        <p className="App-intro">
+            
+        </p>
         <div className="demoform">
-          <JsonFormsRenderer
-            schema={schema}
-            uischema={uischema}
-          />
+            <JsonFormsRenderer
+        schema={schema}
+        uischema={uischema}
+        />
         </div>
-      </div>
+        </div>
     );
-  }
+    }
 }
 
 const mapStateToProps = state => ({
