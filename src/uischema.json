@@ -7,7 +7,7 @@
 				{
 					"type": "Control",
 					"scope": {
-						"$ref": "#/properties/slider"
+						"$ref": "#/properties/gender"
 					}
 				}
 			]
@@ -17,42 +17,16 @@
 			"elements": [
 				{
 					"type": "Control",
+					"label": "Time of arrival",
 					"scope": {
-						"$ref": "#/properties/firstName"
+						"$ref": "#/properties/timeHours"
 					}
 				},
 				{
 					"type": "Control",
+					"label": "",
 					"scope": {
-						"$ref": "#/properties/lastName"
-					},
-					"options": {
-						"focus": true
-					}
-				}
-			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/streetnumber"
-					},
-					"options": {
-						"trim": true,
-						"restrict": false
-					}
-				},
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/postalCode"
-					},
-					"options": {
-						"trim": true,
-						"restrict": true
+						"$ref": "#/properties/timeMinutes"
 					}
 				}
 			]
@@ -65,11 +39,16 @@
 					"scope": {
 						"$ref": "#/properties/personalData/properties/age"
 					}
-				},
+				}
+			]
+		},
+		{
+			"type": "HorizontalLayout",
+			"elements": [
 				{
 					"type": "Control",
 					"scope": {
-						"$ref": "#/properties/dateOfBirth"
+						"$ref": "#/properties/personalData/properties/drivingSkill"
 					}
 				}
 			]
@@ -80,95 +59,10 @@
 				{
 					"type": "Control",
 					"scope": {
-						"$ref": "#/properties/dateAndTimeOfParty"
-					}
-				},
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/timeOfArrival"
+						"$ref": "#/properties/postalCode"
 					}
 				}
 			]
-		},
-		{
-			"type": "HorizontalLayout",
-			"elements": [
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/personalData/properties/height"
-					}
-				},
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/gender"
-					}
-				},
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/rating"
-					}
-				},
-				{
-					"type": "Control",
-					"scope": {
-						"$ref": "#/properties/committer"
-					}
-				}
-			]
-		},
-		{
-			"type": "Group",
-			"label": "Address for Shipping T-Shirt",
-			"elements": [
-				{
-					"type": "HorizontalLayout",
-					"elements": [
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/address/properties/street"
-							}
-						},
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/address/properties/streetnumber"
-							}
-						}
-					]
-				},
-				{
-					"type": "HorizontalLayout",
-					"elements": [
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/address/properties/postalCode"
-							}
-						},
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/address/properties/city"
-							}
-						}
-					]
-				}
-			],
-			"rule": {
-				"effect": "SHOW",
-				"condition": {
-					"type": "LEAF",
-					"scope": {
-						"$ref": "#/properties/committer"
-					},
-					"expectedValue": true
-				}
-			}
 		}
 	]
 }

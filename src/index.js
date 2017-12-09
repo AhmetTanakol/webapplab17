@@ -11,8 +11,6 @@ import { materialize } from 'jsonforms-inferno/dist/ts-build/renderers/materiali
 import SliderControl, { sliderControlTester } from "./slider.control";
 
 const store = initJsonFormsStore({
-  firstName: "Max",
-  personalData: {}
 }, schema, uischema);
 
 materialize();

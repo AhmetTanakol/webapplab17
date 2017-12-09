@@ -17,7 +17,7 @@ class App extends Component {
         <header className="App-header">
           <Logo />
         </header>
-        <h1>{`Welcome to JSON Forms 2`}</h1>
+        <h1>{`Welcome to bad example`}</h1>
         <p className="App-intro">
           More Forms. Less Code.
         </p>
