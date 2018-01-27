@@ -7,88 +7,16 @@
 						{
 							"type": "Control",
 							"scope": {
-								"$ref": "#/properties/personalData/properties/firstName"
+								"$ref": "#/properties/name"
+							}
+						},
+						{
+							"type": "Control",
+							"scope": {
+								"$ref": "#/properties/description"
 							},
 							"options": {
-								"focus": true
-							}
-						},
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/personalData/properties/lastName"
-							}
-						}
-					]
-				},
-				{
-					"type": "HorizontalLayout",
-					"elements": [
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/personalData/properties/age"
-							}
-						},
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/personalData/properties/height"
-							}
-						}
-					]
-				},
-				{
-					"type": "HorizontalLayout",
-					"elements": [
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/personalData/properties/gender"
-							}
-						},
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/personalData/properties/drivingSkill"
-							}
-						}
-					]
-				},
-				{
-					"type": "HorizontalLayout",
-					"elements": [
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/address/properties/street"
-							}
-						},
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/address/properties/city"
-							}
-						}
-					]
-				},
-				{
-					"type": "HorizontalLayout",
-					"elements": [
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/address/properties/province"
-							}
-						},
-						{
-							"type": "Control",
-							"scope": {
-								"$ref": "#/properties/address/properties/postalCode"
-							},
-							"options": {
-								"trim": true,
-								"restrict": true
+								"multi": true
 							}
 						}
 					]
